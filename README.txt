@@ -3,6 +3,7 @@ DHAKA_FLEX — PERSONAL CHROME EXTENSION
 What it does
 - Adds poster-grid browsing to DhakaFlix pages on 172.16.50.7, 172.16.50.8, 172.16.50.10, 172.16.50.12, and 172.16.50.14.
 - Adds trailer and DhakaFlix collection-search buttons to Trakt movie detail and discovery pages on app.trakt.tv.
+- Lets each Chrome profile hide or show the DhakaFlix folder tree from the extension popup.
 - Searches TMDb online for movie titles and poster images.
 - Searches the DhakaFlix movie folders by title and year when you choose Open in VLC on Trakt.
 - Watch trailer looks up movie and TV series trailers.

@@ -7,6 +7,10 @@
 
   const style = document.createElement("style");
   style.textContent = `
+    html.dhakaflix-hide-folder-tree #tree {
+      display: none !important;
+    }
+
     /* Cinematic poster wall using h5ai's real item markup. */
     #view.view-icons {
       box-sizing: border-box !important;
@@ -400,6 +404,24 @@
     }
   `;
   document.head.appendChild(style);
+
+  const folderTreePreference = "dhakaflixHideFolderTree";
+  function applyFolderTreePreference(hide) {
+    document.documentElement.classList.toggle("dhakaflix-hide-folder-tree", Boolean(hide));
+  }
+  try {
+    chrome.storage.local.get(folderTreePreference, result => {
+      if (chrome.runtime.lastError) return;
+      applyFolderTreePreference(result?.[folderTreePreference]);
+    });
+    chrome.storage.onChanged.addListener((changes, areaName) => {
+      if (areaName === "local" && changes[folderTreePreference]) {
+        applyFolderTreePreference(changes[folderTreePreference].newValue);
+      }
+    });
+  } catch {
+    // Keep h5ai's folder tree visible if extension storage is unavailable.
+  }
 
   function getFileName(link) {
     const href = link.getAttribute("href") || "";

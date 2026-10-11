@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Dhaka_Flex",
-  "version": "1.4.16",
+  "version": "1.4.17",
   "description": "Movie and TV posters, trailers, collections, and VLC streaming for DhakaFlix.",
   "permissions": [
     "storage",
