@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Dhaka_Flex",
-  "version": "1.4.15",
+  "version": "1.4.16",
   "description": "Movie and TV posters, trailers, collections, and VLC streaming for DhakaFlix.",
   "permissions": [
     "storage",
@@ -13,6 +13,7 @@
     "http://172.16.50.10/*",
     "http://172.16.50.14/*",
     "http://172.16.50.12/*",
+    "https://app.trakt.tv/*",
     "https://api.themoviedb.org/*"
   ],
   "background": {
@@ -33,6 +34,15 @@
       ],
       "js": [
         "content.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://app.trakt.tv/*"
+      ],
+      "js": [
+        "trakt-content.js"
       ],
       "run_at": "document_idle"
     }

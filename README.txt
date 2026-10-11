@@ -2,8 +2,9 @@ DHAKA_FLEX — PERSONAL CHROME EXTENSION
 
 What it does
 - Adds poster-grid browsing to DhakaFlix pages on 172.16.50.7, 172.16.50.8, 172.16.50.10, 172.16.50.12, and 172.16.50.14.
+- Adds trailer and DhakaFlix collection-search buttons to Trakt movie detail and discovery pages on app.trakt.tv.
 - Searches TMDb online for movie titles and poster images.
-- Searches the DhakaFlix h5ai folders and adds an Open in collection link when it finds a match.
+- Searches the DhakaFlix movie folders by title and year when you choose Open in VLC on Trakt.
 - Watch trailer looks up movie and TV series trailers.
 - Saves your TMDb API Key in this Chrome profile only. Other PCs and users do not get your key.
 - Does not download or save poster files.
@@ -30,9 +31,10 @@ TMDb poster images are displayed from TMDb's image CDN.
 VLC one-click streaming
 -----------------------
 - Windows registered the private dhakaflix-vlc:// link handler for this PC.
-- The extension shows an "Open in VLC" button beside movie files.
+- The extension shows an "Open in VLC" button beside movie files in DhakaFlix and can search the DhakaFlix movie folders from Trakt.
 - First click: Chrome may ask to open VLC; choose Open VLC.
 - The helper only accepts HTTP links from 172.16.50.7, 172.16.50.8, 172.16.50.10, 172.16.50.12, or 172.16.50.14 and passes that link to VLC.
 - Movies stream over the network; they are not downloaded by this feature.
 - After changing extension files, click Reload on chrome://extensions and refresh the DhakaFlix page.
+- On Trakt, reload the extension and refresh app.trakt.tv. Chrome may ask you to allow the extension on Trakt after this update.
 
