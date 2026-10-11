@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Dhaka_Flex",
+  "version": "1.4.15",
+  "description": "Movie and TV posters, trailers, collections, and VLC streaming for DhakaFlix.",
+  "permissions": [
+    "storage",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "http://172.16.50.7/*",
+    "http://172.16.50.8/*",
+    "http://172.16.50.10/*",
+    "http://172.16.50.14/*",
+    "http://172.16.50.12/*",
+    "https://api.themoviedb.org/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "Dhaka_Flex",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://172.16.50.7/*",
+        "http://172.16.50.8/*",
+        "http://172.16.50.10/*",
+        "http://172.16.50.14/*",
+        "http://172.16.50.12/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

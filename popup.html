@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dhaka_Flex</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;width:320px;background:#10141c;color:#f3f2ef;font:14px Arial,sans-serif;padding:18px}.brand{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:#ff887a;font-weight:bold}h1{font:700 22px Georgia,serif;margin:7px 0 10px}.explain{color:#b2b8c3;font-size:12px;line-height:1.5;margin:0 0 16px}label{display:block;font-size:12px;font-weight:bold;margin-bottom:7px}input{width:100%;border:1px solid #424a58;border-radius:7px;background:#090c12;color:white;padding:11px;font-size:13px}button{border:0;border-radius:7px;background:#ff634f;color:#180b09;padding:10px 13px;font-weight:bold;cursor:pointer;width:100%;margin-top:10px}button.secondary{background:transparent;color:#e8e8e8;border:1px solid #424a58}.status{font-size:11px;color:#9fa8b6;min-height:15px;margin-top:10px;line-height:1.4}.privacy{border-top:1px solid #ffffff18;padding-top:12px;margin-top:12px;color:#828b99;font-size:10px;line-height:1.45}
+  </style>
+</head>
+<body>
+  <div class="brand">Dhaka_Flex</div>
+  <h1>Movie Finder</h1>
+  <p class="explain">Add your TMDb API Key once on this PC. Then open DhakaFlix and click the Movie Finder button.</p>
+  <form id="key-form">
+    <label for="api-key">TMDb API Key (v3 auth)</label>
+    <input id="api-key" type="password" autocomplete="off" placeholder="Paste your API Key here">
+    <button type="submit">Save key on this PC</button>
+  </form>
+  <button class="secondary" id="open-site" type="button">Open DhakaFlix</button>
+  <div class="status" id="status" role="status"></div>
+  <div class="privacy">The key is saved in this Chrome profile only. Do not paste it into chat. Posters are fetched from TMDb when you search.</div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
+

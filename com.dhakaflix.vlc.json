@@ -1,0 +1,9 @@
+{
+  "type": "stdio",
+  "path": "C:\\Users\\safin\\OneDrive\\Documents\\dhakaflix-movie-finder-extension\\dhakaflix-vlc-bridge.exe",
+  "allowed_origins": [
+    "chrome-extension://hnmmjmhgpdmjbilaokdeffdbmholbahk/"
+  ],
+  "description": "Open DhakaFlix movie streams in VLC",
+  "name": "com.dhakaflix.vlc"
+}
